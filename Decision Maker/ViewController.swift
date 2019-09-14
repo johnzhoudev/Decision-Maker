@@ -8,6 +8,18 @@
 
 import UIKit
 
+func changeDecision() -> String {
+    let number = Int.random(in: 0...1)
+    
+    if(number == 0){
+        return "Yes."
+    }else{
+        return "No."
+    }
+    
+    
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,6 +27,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet weak var decisionLabel: UILabel!
+    
+    
+    @IBAction func onTap(_ sender: Any) {
+        decisionLabel.text = changeDecision()
+    }
+    
 }
 
