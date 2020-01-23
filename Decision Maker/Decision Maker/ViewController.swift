@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return self.style
     }
+    
     var style:UIStatusBarStyle = .default
     
     
@@ -30,6 +31,8 @@ class ViewController: UIViewController {
             self.view.backgroundColor = UIColor.white
             decisionLabel.textColor = UIColor.black
             instructionLabel.textColor = UIColor.black
+            creditsLabel.textColor =
+                UIColor.black
             self.style = .default
             
             setNeedsStatusBarAppearanceUpdate()
@@ -40,6 +43,7 @@ class ViewController: UIViewController {
             self.view.backgroundColor = UIColor.black
             decisionLabel.textColor = UIColor.white
             instructionLabel.textColor = UIColor.white
+            creditsLabel.textColor = UIColor.white
             self.style = .lightContent
             
             
@@ -54,6 +58,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var instructionLabel: UILabel!
     
+    @IBOutlet weak var creditsLabel: UILabel!
+
+    
     @IBAction func onTap(_ sender: Any) {
         
         let generator = UIImpactFeedbackGenerator(style: .medium)
@@ -63,6 +70,8 @@ class ViewController: UIViewController {
         
         
     }
+    
+    
     
    
     

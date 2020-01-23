@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,40 +13,101 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Decision_Maker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decide!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFI-rL-6eX">
-                                <rect key="frame" x="139" y="242" width="136" height="47"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Built by John Zhou and Anthony Wang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orX-ow-UBE">
+                                <rect key="frame" x="13.5" y="527" width="293" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap anywhere on the screen to make a decision." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oel-Qh-vAp">
-                                <rect key="frame" x="81.5" y="611" width="251" height="148"/>
+                                <rect key="frame" x="45" y="285" width="230" height="148"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="148" id="9aQ-H3-ssQ"/>
-                                    <constraint firstAttribute="width" constant="251" id="A54-xF-by5"/>
+                                    <constraint firstAttribute="height" constant="148" id="Dv2-8m-odM"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="f1P-Vh-9F4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="148" id="ia7-w8-DWh"/>
+                                    <constraint firstAttribute="width" constant="230" id="sMN-n8-35R"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="f1P-Vh-9F4"/>
+                                        <exclude reference="ia7-w8-DWh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="f1P-Vh-9F4"/>
+                                        <include reference="ia7-w8-DWh"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decide!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFI-rL-6eX">
+                                <rect key="frame" x="92" y="130" width="136" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="47" id="3bf-aW-sH2"/>
+                                    <constraint firstAttribute="width" constant="136" id="XYK-mA-o4W"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="rcU-0f-zwj"/>
+                                    <constraint firstAttribute="height" constant="47" id="ufT-dU-xzI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3bf-aW-sH2"/>
+                                        <exclude reference="rcU-0f-zwj"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="3bf-aW-sH2"/>
+                                        <include reference="rcU-0f-zwj"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Oel-Qh-vAp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ajg-jf-VP6"/>
-                            <constraint firstItem="IFI-rL-6eX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-182.5" id="WRw-hl-Rus"/>
-                            <constraint firstItem="IFI-rL-6eX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lev-zN-iid"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Oel-Qh-vAp" secondAttribute="bottom" constant="103" id="xPb-mM-XqE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Oel-Qh-vAp" secondAttribute="bottom" constant="135" id="17c-dA-iWK"/>
+                            <constraint firstItem="orX-ow-UBE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="INW-8Q-1a7"/>
+                            <constraint firstItem="IFI-rL-6eX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="PV9-07-QHW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IFI-rL-6eX" secondAttribute="bottom" constant="215" id="clu-d9-IIj"/>
+                            <constraint firstItem="IFI-rL-6eX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="daX-a6-hNo"/>
+                            <constraint firstItem="Oel-Qh-vAp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="et3-bv-GJb"/>
+                            <constraint firstItem="IFI-rL-6eX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="fbR-BK-tu9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="orX-ow-UBE" secondAttribute="bottom" constant="20.5" id="oSZ-eD-mfm"/>
+                            <constraint firstItem="IFI-rL-6eX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q3Z-Rc-go9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Oel-Qh-vAp" secondAttribute="bottom" constant="59" id="tsW-Bh-PZb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="clu-d9-IIj"/>
+                                <exclude reference="tsW-Bh-PZb"/>
+                                <exclude reference="PV9-07-QHW"/>
+                                <exclude reference="daX-a6-hNo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="clu-d9-IIj"/>
+                                <include reference="tsW-Bh-PZb"/>
+                                <include reference="PV9-07-QHW"/>
+                                <include reference="daX-a6-hNo"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="9Wd-vj-3SK" appends="YES" id="wxq-Qy-cCF"/>
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="creditsLabel" destination="orX-ow-UBE" id="GgL-TH-ngW"/>
                         <outlet property="decisionLabel" destination="IFI-rL-6eX" id="eNe-80-65x"/>
                         <outlet property="instructionLabel" destination="Oel-Qh-vAp" id="gJz-v5-JTF"/>
                     </connections>
